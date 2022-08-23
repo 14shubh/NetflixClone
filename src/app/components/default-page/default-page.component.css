@@ -1,0 +1,68 @@
+.banner{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.banner .background-image{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.banner .background-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.banner .background-image::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.349);
+}
+
+.hero-content{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 30px;
+}
+.header .logo{
+    height: 90px;
+}
+.header .logo img{
+    height: 100%;
+}
+.hero-content .right-tabs .tab-links{
+    display: flex;
+}
+
+.hero-content .right-tabs a{
+    text-decoration: none;
+    margin: 0 30px;
+    color: var(--white-text);
+    padding:8px 15px;
+    border-radius: 3px;
+    background: var(--primary);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    font-size: 16px;
+}
+.hero-content .right-tabs  #lang{
+    background:none;
+    font-size: 16px;
+    padding:6px 10px;
+    border-radius: 3px;
+    border-color: var(--white-text);
+    color: var(--white-text);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
