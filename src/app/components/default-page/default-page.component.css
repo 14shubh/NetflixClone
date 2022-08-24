@@ -1,7 +1,8 @@
 .banner{
+    position: relative;
     height: 100vh;
     width: 100%;
-    position: relative;
+    border-bottom: 8px solid rgb(36, 36, 36);
 }
 .banner .background-image{
     height: 100vh;
@@ -21,7 +22,7 @@
     top: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.349);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.75));
 }
 
 .hero-content{
@@ -58,11 +59,81 @@
     background:none;
     font-size: 16px;
     padding:6px 10px;
-    border-radius: 3px;
+    border-radius: 2px;
     border-color: var(--white-text);
     color: var(--white-text);
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+.tagline-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    margin-top: 50px;
+    /* max-width: 900px; */
+}
+.tagline-text .tagline h1{
+    font-size: 64px;
+    text-align: center;
+    color: var(--white-text);
+}
+.tagline-text .tagline p{
+    font-size: 26px;
+    text-align: center;
+    color: var(--white-text);
+    margin: 15px 0 0 0;
+}
+.tagline-text .email-box{
+    margin-top: 25px;
+}
+.tagline-text .email-box P{
+    text-align: center;
+    font-size: 20px;
+    color: var(--white-text);
+
+}
+.tagline-text .email-box .input-box{
+    margin-top: 20px;
+}
+.tagline-text .email-box #email{
+    min-width: 500px;
+    width: 500px;
+    height: 70px;
+    font-size: 16px;
+    padding: 20px 10px;
+    outline: none;
+    border-radius: 3px 0 0 3px;
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    -ms-border-radius: 3px 0 0 3px;
+    -o-border-radius: 3px 0 0 3px;
+    border: 0;
+}
+.tagline-text .email-box #sub-btn{
+    min-width: 70px;
+    min-height: 70px;
+    width: 240px;
+    height: 70px;
+    background: var(--primary);
+    font-size: 30px;
+    color: var(--white-text);
+    border: 0;
+    vertical-align: bottom;
+    border-radius: 0 3px 3px 0;
+    -webkit-border-radius: 0 3px 3px 0;
+    -moz-border-radius: 0 3px 3px 0;
+    -ms-border-radius: 0 3px 3px 0;
+    -o-border-radius: 0 3px 3px 0;
+}
+.tagline-text .email-box span{
+    display: inline-block;
+    margin: 5px 0 0 5px;
+    color: var(--primary);
 }
