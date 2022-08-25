@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './includes/footer/footer.component';
 import { DefaultPageComponent } from './components/default-page/default-page.component';
-
 @NgModule({
   declarations: [
     AppComponent,

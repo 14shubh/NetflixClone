@@ -2,7 +2,7 @@
     position: relative;
     height: 100vh;
     width: 100%;
-    border-bottom: 8px solid rgb(36, 36, 36);
+    border-bottom: 9px solid rgb(45, 45, 45);
 }
 .banner .background-image{
     height: 100vh;
@@ -38,10 +38,12 @@
 .header .logo img{
     height: 100%;
 }
-.hero-content .right-tabs .tab-links{
+/* .hero-content .right-tabs .tab-links{
     display: flex;
+} */
+.hero-content .right-tabs{
+    position: relative;
 }
-
 .hero-content .right-tabs a{
     text-decoration: none;
     margin: 0 30px;
@@ -56,9 +58,10 @@
     font-size: 16px;
 }
 .hero-content .right-tabs  #lang{
+    position: relative;
     background:none;
-    font-size: 16px;
-    padding:6px 10px;
+    font-size: 14px;
+    padding:7px 8px 7px 20px;
     border-radius: 2px;
     border-color: var(--white-text);
     color: var(--white-text);
@@ -66,6 +69,17 @@
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
     -o-border-radius: 2px;
+}
+.fa-globe{
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    color: #fff;
+    font-size: 13px;
+}
+.hero-content .right-tabs  #lang option{
+    background: rgb(89, 89, 89);
+
 }
 .tagline-text{
     position: absolute;
@@ -101,6 +115,7 @@
 }
 .tagline-text .email-box .input-box{
     margin-top: 20px;
+    position: relative;
 }
 .tagline-text .email-box #email{
     min-width: 500px;
@@ -115,8 +130,31 @@
     -ms-border-radius: 3px 0 0 3px;
     -o-border-radius: 3px 0 0 3px;
     border: 0;
+    color: #000;
 }
+.tagline-text .email-box .input-box label{
+  position: absolute;
+  cursor: text;
+  z-index: 2;
+  top: 25px;
+  left: 5px;
+  font-size: 16px;
+  padding: 0 10px;
+  color: #999;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+}
+.tagline-text .email-box #email:focus + label,
+.tagline-text .email-box #email:Invalid + label{
+  font-size: 14px;
+  top: 2px;
+}
+
 .tagline-text .email-box #sub-btn{
+    position: relative;
     min-width: 70px;
     min-height: 70px;
     width: 240px;
@@ -131,7 +169,35 @@
     -moz-border-radius: 0 3px 3px 0;
     -ms-border-radius: 0 3px 3px 0;
     -o-border-radius: 0 3px 3px 0;
+    cursor: pointer;
 }
+.tagline-text .email-box #sub-btn:hover{
+    background: rgb(255, 1, 13);
+}
+.tagline-text .email-box #sub-btn:hover  .fa-chevron-right{
+    transition: 0.4s ease;
+    -webkit-transition: 0.4s ease;
+    -moz-transition: 0.4s ease;
+    -ms-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
+    transform: translate(7px, -7px);
+    -webkit-transform: translate(7px, -7px);
+    -moz-transform: translate(7px, -7px);
+    -ms-transform: translate(7px, -7px);
+    -o-transform: translate(7px, -7px);
+}
+.tagline-text .email-box .fa-chevron-right{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    font-size: 18px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
 .tagline-text .email-box span{
     display: inline-block;
     margin: 5px 0 0 5px;
